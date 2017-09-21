@@ -3,15 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package graficador;
+package graficadorgrafos;
 
 import java.awt.Color;
 
 /**
  *
- * @author FranciscoHdez
+ * @author hhlopez
  */
 public class Nodo {
+    
     int name;
     int posx, posy;
     Color color;
@@ -54,6 +55,7 @@ public class Nodo {
     public void setColor(Color color) {
         this.color = color;
     }
-
+    
+    
+    
 }
-

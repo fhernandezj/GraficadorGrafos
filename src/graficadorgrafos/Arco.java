@@ -3,32 +3,44 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package graficador;
+package graficadorgrafos;
 
 /**
  *
- * @author FranciscoHdez
+ * @author hhlopez
  */
 public class Arco {
-    int nodoincial;
+    int nodoinicial;
     int nodofinal;
     int x1, y1, x2, y2;
+    int dist;
 
-    public Arco(int nodoincial, int nodofinal, int x1, int y1, int x2, int y2) {
-        this.nodoincial = nodoincial;
+    public Arco(int nodoinicial, int nodofinal, int x1, int y1, int x2, int y2, int dist) {
+        this.nodoinicial = nodoinicial;
         this.nodofinal = nodofinal;
         this.x1 = x1;
         this.y1 = y1;
         this.x2 = x2;
         this.y2 = y2;
-    }
-    
-    public int getNodoincial() {
-        return nodoincial;
+        this.dist = dist;
     }
 
-    public void setNodoincial(int nodoincial) {
-        this.nodoincial = nodoincial;
+    public int getDist() {
+        return dist;
+    }
+
+    public void setDist(int dist) {
+        this.dist = dist;
+    }
+    
+    
+
+    public int getNodoinicial() {
+        return nodoinicial;
+    }
+
+    public void setNodoinicial(int nodoinicial) {
+        this.nodoinicial = nodoinicial;
     }
 
     public int getNodofinal() {
@@ -70,4 +82,6 @@ public class Arco {
     public void setY2(int y2) {
         this.y2 = y2;
     }
+    
+    
 }
